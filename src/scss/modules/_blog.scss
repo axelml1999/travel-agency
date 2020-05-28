@@ -40,8 +40,7 @@
     // Blog Title
     &__title {
         font-size: 1.3em;
-        font-family: var(--primary-font-light);
-        @include mq(l) { font-size: 1.3em; }
+        @include mq(l) { font-size: 1.1em; }
     }
 
     // Blog Subtitle

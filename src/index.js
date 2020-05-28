@@ -1,3 +1,17 @@
+/* ********** Fonts ********** */
+
+import heeboRegular from './fonts/Heebo-Regular.woff'
+import heeboLight from './fonts/Heebo-Light.woff'
+import heeboThin from './fonts/Heebo-Thin.woff'
+
+import ptserifRegular from './fonts/PTSerif-Regular.woff'
+import ptserifItalic from './fonts/PTSerif-Italic.woff'
+
+
+/* ********** CSS ********** */
+
+import scss from './scss/main.scss'
+
 /* ********** Images ********** */
 
 import header from './images/header.jpg'
@@ -12,12 +26,6 @@ import breakfast from './images/breakfast.jpg'
 import honeymoon from './images/honeymoon.jpg'
 import holiday from './images/holiday.jpg'
 import buttom from './images/buttom.png'
-
-
-
-/* ********** CSS ********** */
-
-import scss from './scss/main.scss'
 
 /* ********** JavaScript ********** */
 import { activeMenu, activeMenuLink } from './js/menu'
