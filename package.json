@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter-kit",
+  "name": "travel-agency",
   "version": "1.0.0",
-  "description": "An starter kit workflow using Webpack 4, PUG, SCSS, SMACSS, BEM, PostCSS & Babel.",
+  "description": "A basic landing page using Web Pack Starter Kit",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",

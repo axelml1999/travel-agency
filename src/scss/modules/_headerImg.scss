@@ -1,0 +1,54 @@
+/* ********** HeaderImg Component ********** */
+.headerImg {
+
+    // Header item
+    &__item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    // Header image
+    &__image {
+      height: calc(100vh - 60px);
+      width: 100vw;
+      object-fit: cover;
+    }
+  
+    // Header content
+    &__content {
+      position: absolute;
+      text-align: center;
+      color: var(--text-color-white);
+      top: 20%;
+  
+      @include mq(m) { top: 25%; }
+      @include mq(l) { top: 20%; }
+    }
+  
+    // Header title
+    &__title {
+        display: block;
+        text-transform: uppercase;
+        margin-top: 5em;
+
+        @include mq(m) { margin-top: 9em; }
+    }
+  
+    // Header titleP
+    &__titleP {
+      font-size: 2.5em;
+      font-family: var(--primary-font--light);
+      letter-spacing: 9px;
+      text-transform: uppercase;
+  
+      @include mq(m) { font-size: 5em; letter-spacing: 25px;}
+    }
+  
+    // Header title2
+    &__title2 {
+      display: block;
+      text-transform: uppercase;
+    }
+  }

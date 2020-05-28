@@ -1,0 +1,88 @@
+/* ********** Blog Component ********** */
+
+.blog {
+
+    // Blog Item
+    &__item { margin: 2em; align-items: center;}
+
+    // Blog Grid
+    &__grid {
+        @include mq(m) { display: grid; grid-template-columns: auto auto auto; }
+    }
+
+    // Blog View
+    &__view {
+        color: var(--primary-color);
+        float: right;
+    }
+
+    // Blog Image
+    &__img {
+        width: 350px;
+        height: 150px;
+        object-fit: cover;
+        @include mq(l) { 
+            width: 450px;
+            height: 150px; }
+    }
+
+    // Blog Title Principal
+    &__titleP {
+        padding-top: 2em;
+        font-size: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--primary-font-thin);
+
+        @include mq(l) { font-size: 3em; }
+    }
+
+    // Blog Title
+    &__title {
+        font-size: 1.3em;
+        font-family: var(--primary-font-light);
+        @include mq(l) { font-size: 1.3em; }
+    }
+
+    // Blog Subtitle
+    &__subtitle {
+        display: block;
+        text-align: center;
+        color: #727272;
+    }
+
+    // Blog Descrption
+    &__description {
+        padding-top: 2em;
+    }
+
+    // Blog ButtomA
+    &__buttomA {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        margin: 2em auto;
+    }
+
+    &__itemButtom {
+        padding-top: 2em;
+        padding-bottom: 4em;
+    }
+
+    // Blog Buttom
+    &__buttom {
+        text-decoration: none;
+        padding: 7px;
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+        text-transform: uppercase;  
+
+        &:hover {
+            color: var(--quaternary-color);
+            background-color: var(--primary-color);
+            text-decoration: none;
+        }
+    }
+}

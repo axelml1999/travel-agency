@@ -1,0 +1,80 @@
+/* ********** Testimoni Component ********** */
+.testimoni {
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+        
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+        
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+    // video__container
+  &__container {
+    text-align: center;
+    color: var(--text-color-white);
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+	overflow: hidden;
+  }
+
+    // Testimoni Title
+    &__title {
+        padding-top: 2em;
+        font-size: 2em;
+        text-transform: uppercase;
+        @include mq(m) {font-size: 3em; padding-top: 1em;}
+    }
+
+    // Testimoni Comment
+    &__comment {
+        padding-top: 1.5em;
+        font-size: 2em;
+        color: #FFE200;
+    }
+
+    //Testimoni Author
+    &__author {
+        padding-bottom: 5em;
+        padding-top: 1em;
+        @include mq(m) {padding-bottom: 2em;}
+    }
+
+
+
+    &__img1 {
+        $color: rgba(238,38,85,0.8);
+        background: linear-gradient(rgba($color,.6),rgba($color,.6)), url('/assets/images/testimoni.jpg') center / cover;
+        position: relative;
+        min-height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-attachment: fixed;
+    }
+
+    &__slider {
+        display: flex;
+        padding: 0;
+        width: 400%;
+	    animation: cambio 15s infinite alternate linear;
+    }
+
+    &__content {
+        width: 100%;
+	    list-style: none;
+    }
+
+
+    
+
+
+}

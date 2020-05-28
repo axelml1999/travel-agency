@@ -1,0 +1,44 @@
+/* ********** About Component ********** */
+.about {
+
+    // About Grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 2em;
+        @include mq(m) { display: grid; grid-template-columns: auto auto; }
+    }
+
+    // About Img 
+    &__img {
+        @include mq(m) {width: 400px; height: auto;}
+    }
+
+    // About Title
+    &__title {
+        font-size: 2em;
+        @include mq(m) { font-size: 4em; font-family: var(--primary-font-light);}
+    }
+
+    // About Subtitle
+    &__subtitle {
+        color: #727272;
+        font-size: .9em;
+    }
+
+    // ABout Description
+    &__description {
+        margin-top: .5em;
+        color: #727272;
+        font-size: .9em;
+    }
+
+    //About Hr
+    &__hr {
+        border: 1px solid var(--primary-color);
+        width: 30%;
+        margin-top: .5em;
+        @include mq(m) { width: 10% }
+    }
+}

@@ -1,0 +1,40 @@
+/* ********** Trip Component ********** */
+.trip {
+
+    // Trip img
+    &__img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      // Trip image
+      &__image {
+        width: 100vw;
+        object-fit: cover;
+        @include mq(m) { height: 17em; }
+      }
+    
+      // Trip content
+      &__cont {
+        position: absolute;
+        text-align: center;
+        top: 20%;
+    
+        @include mq(m) { top: 25%; }
+        @include mq(l) { top: 30%; }
+      }
+
+      // Trip title
+    &__title {
+        font-size: 2.5em;
+        font-family: var(--primary-font--light);
+        text-transform: uppercase;
+    
+        @include mq(m) { font-size: 3em;}
+      }
+
+      // Trip Subtitle
+      &__subtitle { color: #727272;}
+}

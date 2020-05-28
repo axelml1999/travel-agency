@@ -1,0 +1,103 @@
+/* ********** Offer Component ********** */
+.offer {
+
+    // Offer Image
+    &__image {
+        height: calc(100vh - 60px);
+        width: 100vw;
+        object-fit: cover;
+        @include mq(m) {height: 300px;}
+    }
+
+    // Offer img
+    &__img {
+        position: relative;
+        justify-content: center;
+        padding-top: 1em;
+      }
+
+    // Offer Item
+    &__item {
+        background-color: rgba(255,255,255,0.8);
+        position: absolute;
+        top: .1px;
+        height: 100%;
+        @include mq(m) {
+            top: .1px;
+            left: 50%;
+
+        }
+    }
+
+    &__buttomA {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    &__itemButtom {
+        padding-bottom: 4em;
+    }
+
+    // Offer Title
+    &__title {
+        padding-top: 1em;
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        @include mq(l) { font-size: 3em;}
+    }
+
+    // Offer Duration
+    &__duration {
+        display: block;
+        text-align: center;
+        color: #727272;
+    }
+
+    // Offer Item2
+    &__item2 {
+        padding-bottom: 2em;
+    }
+
+    // Offer Description
+    &__description {
+        display: block;
+        text-align: center;
+        padding: 1em;
+    }
+
+    // Offer View
+    &__view {
+        display: block;
+        color: var(--primary-color);
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    // Offer Other
+    &__other {
+        margin: 2em auto;
+        gap: 1em;
+        @include mq(m) {display: grid; grid-template-columns: auto auto;}
+    }
+
+    //Offer Buttom
+    &__buttom {
+        text-decoration: none;
+        padding: 7px;
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+        text-transform: uppercase;  
+
+        &:hover {
+            color: var(--quaternary-color);
+            background-color: var(--primary-color);
+            text-decoration: none;
+        }
+    }
+
+
+}

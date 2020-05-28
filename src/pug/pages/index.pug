@@ -1,13 +1,149 @@
 extends ../template.pug
 append variables
   - pageTitle       = 'Home'
-  - metaDescription = ''
+  - metaDescription = 'This project was buuilding for know webpack-starter-kit funcionality'
   - ogTitle         = 'Home'
-  - ogDescription   = ''
+  - ogDescription   = 'This project was buuilding for know webpack-starter-kit funcionality'
   - ogUrl           = ''
-  - ogImage         = ''
+  - ogImage         = '/'
 
 block body
 
-  //- Logo Section
-  include ../includes/logo.pug
+  //- Header Img section
+  section.headerImg
+    .headerImg__container
+      .headerImg__item
+        img(class="headerImg__image", src="/assets/images/header.jpg", alt="Honeymoon")
+        .headerImg__content.l-container
+          span.headerImg__title Enjoy Your
+          h1.headerImg__titleP Honeymoon
+          span.headerImg__title2 Left The Rest Of Us
+  //- AboutUs Section
+  section.about
+    .about__container.l-container
+      .about__grid
+        .about__item
+          h2.about__title More than 20 years of experience
+          span.about__subtitle Ngga ada itu dua puluh tahun, baru bikin aja ini, gaya gayaan aja buat nipu kalian
+          hr.about__hr
+          p.about__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. <br> Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. <br> Et nam soleat accusamus. Vim hinc aeque viderer no, ei aeque viris euismod quo. Id qui altera equidem.
+        .about__item
+          img(class="about__img" src="/assets/images/about.jpg", alt="About Image")
+  //- Email Section
+  section.email
+      .email__container.l-container 
+        .email__item 
+          span.email__title Subscribe to our newsletter for deal and promo 
+        .email__formulario                 
+          input(class="email__input" type="email" placeholder=" Youreamail@address.com")
+          a(class="email__boton" href="#") Subscribe
+  //- Packages Section
+  section.package
+    .package__container.l-container
+      h2.package__titlep Our Package
+      span.package__subtitle Jangan Percaya Tipu Tipu Aja Ini
+      .package__grid
+        .package__item
+          h2.package__title Luxury Paradise
+          hr.package__hr
+          p.package__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+        .package__item
+          h2.package__title Deluxe Gold
+          hr.package__hr
+          p.package__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+        .package__item
+          h2.package__title Premium Silver
+          hr.package__hr
+          p.package__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+  //- Trip Section
+  section.trip
+    .trip__container
+      .trip__img
+        img(class="trip__image", src="/assets/images/trip.jpg", alt="Trip")
+        .trip__cont
+          h3.trip__title Feautered Trip
+          span.trip__subtitle Sama aja ini semua g ada beda 
+  //- Offers Section
+  section.offer
+    .offer__container.l-container
+      .offer__img
+        img(class="offer__image", src="/assets/images/greece.jpg", alt="Greece trip")
+        .offer__item
+          h3.offer__title Luxury Greece
+          span.offer__duration 6 days, 5 nights
+          p.offer__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. Et nam soleat accusamus. Vim hinc aeque viderer no.
+          a(class="offer__view" href="#") View Detail
+      .offer__other
+        .offer__item2
+          img(class="offer__image" src="/assets/images/belgia.jpg", alt="Belgia Village")
+          h3.offer__title Belgia Village
+          span.offer__duration 3 Days, 2 Nights
+          p.offer__description  Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. Et nam soleat accusamus. Vim hinc aeque viderer no.   
+        .offer__item2
+          img(class="offer__image" src="/assets/images/paradise.jpg", alt="Middle East Paradise")
+          h3.offer__title Middle East Paradise
+          span.offer__duration 6 Days, 5 Nights
+          p.offer__description  Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. Et nam soleat accusamus. Vim hinc aeque viderer no.
+      .offer__buttomA
+        .offer__itemButtom
+          a(class="offer__buttom" href="#") View More Destination
+  //- Testimoni section
+  section.testimoni
+    .testimoni__container
+      ul.testimoni__slider
+        li.testimoni__content
+          .testimoni__img1
+            h3.testimoni__title Testimoni
+            span.testimoni__subtitle Yang Bagus Bagusnya Aja yg Dibilangin
+            h3.testimoni__comment “Our honeymoon just awesome”
+            p.testimoni__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+            p.testimoni__author Robert&Jane
+        li.testimoni__content
+          .testimoni__img1
+            h3.testimoni__title Testimoni
+            span.testimoni__subtitle Yang Bagus Bagusnya Aja yg Dibilangin
+            h3.testimoni__comment “Our honeymoon just awesome”
+            p.testimoni__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+            p.testimoni__author Robert&Jane
+        li.testimoni__content
+          .testimoni__img1
+            h3.testimoni__title Testimoni
+            span.testimoni__subtitle Yang Bagus Bagusnya Aja yg Dibilangin
+            h3.testimoni__comment “Our honeymoon just awesome”
+            p.testimoni__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+            p.testimoni__author Robert&Jane
+        li.testimoni__content
+          .testimoni__img1
+            h3.testimoni__title Testimoni
+            span.testimoni__subtitle Yang Bagus Bagusnya Aja yg Dibilangin
+            h3.testimoni__comment “Our honeymoon just awesome”
+            p.testimoni__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+            p.testimoni__author Robert&Jane
+  //- Blog Section
+  section.blog
+    .blog__container.l-container
+      h3.blog__titleP Blog
+      span.blog__subtitle Sumpah ini semua kontennya nyolong dari blog orang
+      .blog__grid
+        .blog__item
+          img(class="blog__img" src="/assets/images/breakfast.jpg", alt="Choose your breakfast carefully")
+          h4.blog__title Choose your breakfast carefully
+          p.blog__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+          a(class="blog__view" href="#") View More
+        .blog__item
+          img(class="blog__img" src="/assets/images/honeymoon.jpg", alt="Take your homeymoon to the next level")
+          h4.blog__title Take your homeymoon to the next level
+          p.blog__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+          a(class="blog__view" href="#") View More
+        .blog__item
+          img(class="blog__img" src="/assets/images/holiday.jpg", alt="Don’t desttroy your holiday with to many gadget")
+          h4.blog__title Don’t desttroy your holiday with to many gadget 
+          p.blog__description Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+          a(class="blog__view" href="#") View More
+      .blog__buttomA
+        .blog__itemButtom
+          a(class="blog__buttom" href="#") View More Story
+
+
+            
+

@@ -1,0 +1,57 @@
+/* ********** Package Component ********** */
+.package {
+    background: var(--secondary-color);
+
+    // Package Item
+    &__item { padding: 2em;}
+
+    // Package Grid
+    &__grid {
+        @include mq(m) { display: grid; grid-template-columns: auto auto auto; }
+    }
+
+    // Package Hr
+    &__hr {
+        display: block;
+        border: 1px solid var(--primary-color);
+        width: 20%;
+        margin-top: .5em;
+    }
+
+    &__hr2 {
+        border: 1px solid var(--primary-color);
+        width: 20%;
+        padding-top: 2em;
+    }
+
+    // Package Title Principal
+    &__titlep {
+        padding-top: 1em;
+        font-size: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--primary-font);
+
+        @include mq(l) { font-size: 3em; }
+    }
+
+    // Package Title
+    &__title {
+        font-size: 1.5em;
+        font-family: var(--primary-font-light);
+        @include mq(l) { font-size: 1.5em; }
+        @include mq(m) { font-size: 1.3em; }
+    }
+
+    // Package Subtitle
+    &__subtitle {
+        display: block;
+        text-align: center;
+        color: #727272;
+    }
+
+    // Package Descrption
+    &__description {
+        padding-top: .5em;
+    }
+}

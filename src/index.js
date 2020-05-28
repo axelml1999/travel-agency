@@ -1,20 +1,27 @@
-/* ********** Fonts ********** */
-import avertaRegular  from './fonts/Averta.woff'
-import avertaBlack    from './fonts/Averta_Black.woff'
-
-
 /* ********** Images ********** */
 
-import favicon  from './images/favicon.png'
-import isotipo  from './images/isotipo.svg';
+import header from './images/header.jpg'
+import logo from './images/logo.svg'
+import about from './images/about.jpg'
+import trip from './images/trip.jpg'
+import greece from './images/greece.jpg'
+import belgia from './images/belgia.jpg'
+import paradise from './images/paradise.jpg'
+import testimoni from './images/testimoni.jpg'
+import breakfast from './images/breakfast.jpg'
+import honeymoon from './images/honeymoon.jpg'
+import holiday from './images/holiday.jpg'
+import buttom from './images/buttom.png'
 
-import iconNode     from './images/node.svg'
-import iconWebpack  from './images/webpack.svg'
-import iconPug      from './images/pug.svg'
-import iconSass     from './images/sass.svg'
-import iconBabel    from './images/babel.svg'
 
 
 /* ********** CSS ********** */
 
 import scss from './scss/main.scss'
+
+/* ********** JavaScript ********** */
+import { activeMenu, activeMenuLink } from './js/menu'
+
+activeMenu('hamburger', 'menu')
+activeMenuLink()
+

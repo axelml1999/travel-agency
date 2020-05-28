@@ -14,8 +14,17 @@
 
 
 /*  Module Rules ================================ */
-@import 'modules/logo';
-
+@import 'modules/menu.scss';
+@import 'modules/header.scss';
+@import 'modules/headerImg.scss';
+@import 'modules/about.scss';
+@import 'modules/email.scss';
+@import 'modules/package.scss';
+@import 'modules/trip.scss';
+@import 'modules/offer.scss';
+@import 'modules/testimoni.scss';
+@import 'modules/blog.scss';
+@import 'modules/footer.scss';
 
 /*  State Rules ================================= */
 @import 'state/is-active';
